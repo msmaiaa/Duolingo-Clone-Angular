@@ -44,7 +44,7 @@ export class PainelComponent implements OnInit {
   public verificarResposta(): void{
     
     //resposta = valor do textarea 
-    if(this.rodadaFrase.frasePtBr == this.resposta){
+    if(this.rodadaFrase.frasePtBr.toUpperCase() == this.resposta.toUpperCase()){
       //limpa o campo de resposta errada
       this.respostaErrada = ""
 
